@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  mariadb-server:
+    build:
+      context: .
+    container_name: mariadb-server
+    environment:
+      MARIADB_ROOT_PASSWORD: m1_s3cr3t
+    ports:
+      - "3306:3306"
+    restart: always
