@@ -1,0 +1,223 @@
+{
+	"info": {
+		"_postman_id": "d328e58a-ae6e-4e1d-a581-fdd4fbf1970e",
+		"name": "alumnos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "39857239"
+	},
+	"item": [
+		{
+			"name": "get_alumnos",
+			"request": {
+				"auth": {
+					"type": "inherit"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/alumnos",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"alumnos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get alumno id",
+			"request": {
+				"auth": {
+					"type": "inherit"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/alumnos/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"alumnos",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete alumno",
+			"request": {
+				"auth": {
+					"type": "inherit"
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/alumnos/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"alumnos",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add alumno",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Cookie",
+						"value": "XSRF-TOKEN=eyJpdiI6IlBCblJDelpZMHBQSmF6RVVFaXEzNmc9PSIsInZhbHVlIjoiNDVDeWhWZGo0NGpoT0lueUNSVWwrKzN6NC8wNnBKZW51WGpMbFN3R1E4aFg5dG5uWmFjbDlMQTQ0MFQxdGJXRjRyazFOQy8xYlNXREJSYVFBaDVHUFlZSmRvTFNzYU1BRnN4NWNFS2ZCbXdHT1kwM1NveXJENXdHdlN4UnVDZTAiLCJtYWMiOiJiNWU0ZTc4ZjA3NWQ2Njc2MzYzMzA1MGM2MDVkZDY2MmIyZjUwN2VkOTRiYTkwMjQ3NjdjOWNmOWFkZDFjMmViIiwidGFnIjoiIn0%3D; laravel_session=eyJpdiI6IlBHZjA1dXUxS0tIWkZ5UkNYc1F6K1E9PSIsInZhbHVlIjoiWkpNZ0VHbHJCbHZ4ZWhWcFF4QmtEVTJVSi9Ra29RVGtnMGY3Y0ZjUWhjdUFIUG9uN0o4VU0xZmZ6U3pxdUJQUXo3eDFRMHd5dXplNFZqNkRNN0UvcWR6Tjk3WFhrV2FZNlAzMGo0RmtaTVFZSTNJQ29Ic3pNVThVQ2FQRWpleGgiLCJtYWMiOiI3NzNlYTdjMzg4NzAwZmM5ODBiODg5ZGQ4MzIyN2U2Y2M2ZDM4YjU4NzEyOTk4NjQyYWUwZWYzYWUyZTFhYzY0IiwidGFnIjoiIn0%3D",
+						"name": "cookie",
+						"type": "text"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache",
+						"name": "cache-control",
+						"type": "text"
+					},
+					{
+						"key": "Postman-Token",
+						"value": "<calculated when request is sent>",
+						"name": "postman-token",
+						"type": "text"
+					},
+					{
+						"key": "Content-Length",
+						"value": "0",
+						"name": "content-length",
+						"type": "text"
+					},
+					{
+						"key": "Host",
+						"value": "<calculated when request is sent>",
+						"name": "host",
+						"type": "text"
+					},
+					{
+						"key": "User-Agent",
+						"value": "PostmanRuntime/7.39.1",
+						"name": "user-agent",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "*/*",
+						"name": "accept",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate, br",
+						"name": "accept-encoding",
+						"type": "text"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive",
+						"name": "connection",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "Application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/alumnos/?nombre=Paco&email=paco@paco.com",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"alumnos",
+						""
+					],
+					"query": [
+						{
+							"key": "nombre",
+							"value": "Paco"
+						},
+						{
+							"key": "email",
+							"value": "paco@paco.com"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "modificar alumnos",
+			"request": {
+				"auth": {
+					"type": "inherit"
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "Application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/alumnos/19?nombre=Manuel",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"alumnos",
+						"19"
+					],
+					"query": [
+						{
+							"key": "nombre",
+							"value": "Manuel"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,220 @@
+{
+	"info": {
+		"_postman_id": "ffcc3780-588d-4daf-9d62-44dc0f1fb71f",
+		"name": "asignaturas",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "39857239"
+	},
+	"item": [
+		{
+			"name": "get asignaturas",
+			"request": {
+				"auth": {
+					"type": "inherit"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/asignaturas",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"asignaturas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create asignatura",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Cookie",
+						"value": "XSRF-TOKEN=eyJpdiI6InBWUkJvbUphZ0RFc09xWVVGd1lCWUE9PSIsInZhbHVlIjoiSTVOaFIzZFcwOXAzZTMxYkNIMUl6aFBEVmdiTkFJZkZCL1lROHl1OUNEREozTXpaSDJxd2o3cjI0SzNsVGhuR3hpd2p2MUlHeW41ck81MDR0VXBNSW5Ua1BoV0dmUit3REpIMy94Z3UwS0d2QmpoSDhJaDI2cEUwOVFOM1Jxc3giLCJtYWMiOiI0NjZhMzk4NDUzZDM0NDAwMDMzOGNlOWQzN2QxZDEyNzk1YzI0YzFlNWVjNzQxNGJiZTg3MjZiNDYyMGE1NzVmIiwidGFnIjoiIn0%3D; laravel_session=eyJpdiI6Ik9FUzJpY3BYRTErN1hSZHgvV1l4M2c9PSIsInZhbHVlIjoiaWRodU93clVFTG9Tc0g5dE9VK2tXRkVhRVpaVStBY2E3ZjdhU3NuSG1sc0FTYlNINmZmbnF5Nkd5OUFtQmxKSkVLTmdnZjhKUU5janAvOUdTV3dlZU1vbnY3WmNoTnYrSVB5MTkvV2RCT3hlUjlkSU91Q0haNGIyRGkrY2JibE8iLCJtYWMiOiI1MTg0NmUwZmJlOGE1NDhlMzA3ZjI4ZDIzZGNlNWJkMjk5ODQzZWE4ZDY3NWE0ODZhNTA4NTI4OTE5MTk1Y2U4IiwidGFnIjoiIn0%3D",
+						"name": "cookie",
+						"type": "text"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache",
+						"name": "cache-control",
+						"type": "text"
+					},
+					{
+						"key": "Postman-Token",
+						"value": "<calculated when request is sent>",
+						"name": "postman-token",
+						"type": "text"
+					},
+					{
+						"key": "Content-Length",
+						"value": "0",
+						"name": "content-length",
+						"type": "text"
+					},
+					{
+						"key": "Host",
+						"value": "<calculated when request is sent>",
+						"name": "host",
+						"type": "text"
+					},
+					{
+						"key": "User-Agent",
+						"value": "PostmanRuntime/7.39.1",
+						"name": "user-agent",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "*/*",
+						"name": "accept",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate, br",
+						"name": "accept-encoding",
+						"type": "text"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive",
+						"name": "connection",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "Application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/asignaturas/?nombre=PMDM",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"asignaturas",
+						""
+					],
+					"query": [
+						{
+							"key": "nombre",
+							"value": "PMDM"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get asignatura id",
+			"request": {
+				"auth": {
+					"type": "inherit"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/asignaturas/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"asignaturas",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "modificar asignaturas",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "Application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/asignaturas/3?descripcion=base de datos&nombre=BDD",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"asignaturas",
+						"3"
+					],
+					"query": [
+						{
+							"key": "descripcion",
+							"value": "base de datos"
+						},
+						{
+							"key": "nombre",
+							"value": "BDD"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete asignaturas",
+			"request": {
+				"auth": {
+					"type": "inherit"
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/asignaturas/3",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"asignaturas",
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
