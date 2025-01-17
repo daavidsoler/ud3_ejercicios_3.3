@@ -14,9 +14,10 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         $this->call([
-            AlumnosTableSeeder::class,     // Primero, para que existan alumnos
-            AsignaturasTableSeeder::class, // Segundo, para que existan asignaturas
-            NotasTableSeeder::class,       // Tercero, ya que depende de los anteriores
+            AlumnosTableSeeder::class,     
+            AsignaturasTableSeeder::class, 
+            NotasTableSeeder::class,      
+            PostSeeder::class,
         ]);
     }
 
