@@ -10,10 +10,9 @@ class PostSeeder extends Seeder
 {
     public function run()
     {
-        // Verificar o crear el alumno
         $alumno = Alumno::firstOrCreate(
-            ['email' => 'juan.perez@example.com'], // Condición para buscar
-            ['nombre' => 'Juan Pérez'] // Datos para crear si no existe
+            ['email' => 'juan.perez@example.com'], 
+            ['nombre' => 'Juan Pérez'] 
         );
 
         // Crear posts para el alumno
