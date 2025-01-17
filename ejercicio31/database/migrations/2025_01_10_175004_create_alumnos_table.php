@@ -12,12 +12,13 @@ return new class extends Migration
     public function up()
     {
         Schema::create('alumnos', function (Blueprint $table) {
-            $table->id(); // PK
+            $table->id();
             $table->string('nombre');
             $table->string('email')->unique();
             $table->timestamps();
         });
     }
+
 
     /**
      * Reverse the migrations.

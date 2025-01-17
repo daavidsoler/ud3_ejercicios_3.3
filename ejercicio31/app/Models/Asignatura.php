@@ -21,4 +21,11 @@ class Asignatura extends Model
     {
         return $this->hasMany(Nota::class, 'asignatura_id');
     }
+    
+    public function alumnos()
+    {
+        return $this->belongsToMany(Alumno::class, 'notas', 'asignatura_id', 'alumno_id')
+                    ->withPivot('nota', 'created_at', 'updated_at');
+    }
+    
 }

@@ -17,15 +17,14 @@ class Nota extends Model
         'nota',
     ];
 
-    // Relación con Alumno (N:1)
     public function alumno()
     {
         return $this->belongsTo(Alumno::class, 'alumno_id');
     }
-
-    // Relación con Asignatura (N:1)
+    
     public function asignatura()
     {
         return $this->belongsTo(Asignatura::class, 'asignatura_id');
     }
+    
 }
